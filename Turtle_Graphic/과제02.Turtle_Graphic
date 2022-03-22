@@ -4,8 +4,8 @@ import random
 
 def screenLeftClick(x,y):                   #왼쪽 마우스버튼을클릭하여 도장을 찍게 하는 함
     tSize = random.randrange(2,10)          #tSize = 크기 = 1부터 5
-    turtle.shapesize(tSize)                 #색상도 랜덤으로
-    r = random.random()
+    turtle.shapesize(tSize)                 
+    r = random.random()                     #색상도 랜덤으로
     g = random.random()
     b = random.random()
     turtle.color((r,g,b))
