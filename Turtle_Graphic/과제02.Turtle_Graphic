@@ -2,33 +2,27 @@ import turtle
 import random
 
 
-#왼쪽 마우스버튼을클릭하여 도장을 찍게 하는 함
-def screenLeftClick(x,y):
-    #tSize = 크기 = 1부터 5
-    tSize = random.randrange(2,10)
-    turtle.shapesize(tSize)
+def screenLeftClick(x,y):                   #왼쪽 마우스버튼을클릭하여 도장을 찍게 하는 함
+    tSize = random.randrange(2,10)          #tSize = 크기 = 1부터 5
+    turtle.shapesize(tSize)                 #색상도 랜덤으로
     r = random.random()
     g = random.random()
     b = random.random()
     turtle.color((r,g,b))
-    
-    #각도 = 0부터 360
-    tAngle = random.randrange(0, 360)
-    
-    #거북이 이동!
-    turtle.penup()
-    turtle.goto(x,y)
-    turtle.left(tAngle)
-    
-    #도장 찍는 함수
-    turtle.stamp()
+    tAngle = random.randrange(0, 360)     #각도 = 0부터 360
+
+    print('x=', x, 'y=', y);    # 이건, 좌표를 알려주는 그냥 그런친구...
+
+    #turtle.penup()
+    turtle.goto(x,y)            # 거북이를 옮겨주는 코드
+    turtle.left(tAngle)         
+    turtle.stamp()              # 거북이 도장을 찍어주는 코드
 
 # 변수 초기화
 r,g,b =0.0, 0.0, 0.0
 
 turtle.title("Turtle Graphic")
 turtle.shape("turtle")
-
-turtle.onscreenclick(screenLeftClick,1)
-
+turtle.setup(800,800)
+turtle.onscreenclick(screenLeftClick,1)         #스크린에 왼쪽 마우스를 클릭할 경우 -> 위에 설정해놓은 함수를 호출. screednLeftClick(x,y)
 turtle.done()
