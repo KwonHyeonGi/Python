@@ -1,0 +1,21 @@
+while True : 
+    a = int(input("1st input : "))
+    b = int(input("2st input : "))
+
+    print(type(a), type(b))
+
+    result = a + b
+    print(a, "+", b, "=", result)
+
+    result = a - b
+    print(a, "-", b, "=", result)
+
+    result = a*b
+    print(a, "*", b, "=", result)
+
+    result = a/b
+    print(a, "/", b, "=", result)
+
+print("exit")
+
+print("파이썬에서 블록설정은 : <- 이걸로 함, 그리고 블록 지정하는 부분을 전체 한칸 TAP 해준다")
