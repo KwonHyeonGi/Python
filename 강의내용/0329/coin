@@ -1,0 +1,23 @@
+while True : 
+    money = 0
+
+    money = input("교환할 돈은 얼마입니까?")
+    if money == 'exit':
+        print("Exit")
+        break
+
+    w500 = money//500
+    money %=500
+    w100 = money//100
+    money %=100
+    w50 = money//50
+    money %=50
+    w10 = money//10
+    money %=10
+
+    print("500원짜리 %d개"%w500)
+    print("100원짜리 %d개"%w100)
+    print("50원짜리 %d개"%w50)
+    print("10원짜리 %d개"%w10)
+    print("잔돈 %d원"%money)
+
