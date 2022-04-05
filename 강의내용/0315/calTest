@@ -1,0 +1,24 @@
+while True : 
+    a = input("1st input : ")
+# a = int(input()) -> int 값으로 받으니 0과 00000의 차이를 모르기때문에, 문자열로 처음에 받아서 00000일 경울 break를 걸고 아닐 경우 int로 값으로 다시 받게!    
+    if a == "00000":
+            break
+    b = int(input("2st input : "))
+    a = int(a)
+    
+    result = a + b
+    print(a, "+", b, "=", result)
+
+    result = a - b
+    print(a, "-", b, "=", result)
+
+    result = a*b
+    print(a, "*", b, "=", result)
+
+    result = a/b
+    print(a, "/", b, "=", result)
+
+
+print("exit")
+
+#파이썬에서 블록설정은 : <- 이걸로 함, 그리고 블록 지정하는 부분을 전체 한칸 TAP 해준다
