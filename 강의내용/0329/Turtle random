@@ -1,0 +1,37 @@
+import turtle
+import random
+
+def turtleMove(x,y):
+    global r, g, b
+
+    r = random.random()
+    g = random.random()
+    b = random.random()
+
+    turtle.goto(x,y)
+    turtle.pencolor(r,g,b)
+    turtle.pendown()
+
+## 변수 선언 부분 ##
+r,g,b = 0.0, 0.0, 0.0
+x,y = 0, 0
+
+## s -> 윈도우 사이즈, c -> 캔버스 사이즈
+sWidth, sHeight = 510, 510
+cWidth, cHeight = 500, 500
+
+## 메인 코드 부분 ##
+turtle.title('거북이로 그림 그리기')
+turtle.home()
+turtle.shape('turtle')
+
+turtle.screensize(sWidth, sHeight)
+turtle.setup(cWidth, cHeight)
+turtle.pensize(3)
+
+
+for _ in range(0, 50):
+    x = random.randrange(-300,300)
+    y = random.randrange(-300,300)
+    turtleMove(x,y)
+turtle.done()
