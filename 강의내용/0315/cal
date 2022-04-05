@@ -1,0 +1,15 @@
+a = int(input("1st input : "))
+b = int(input("2st input : "))
+
+print(type(a), type(b))
+
+result = a + b
+print(a, "+", b, "=", result)
+result = a - b
+print(a, "-", b, "=", result)
+result = a*b
+print(a, "*", b, "=", result)
+result = a/b
+print(a, "/", b, "=", result)
+
+
