@@ -1,0 +1,13 @@
+import random
+
+numbers = []
+## numbers는 빈배영
+## 0~10이 num에 들어가는데 numbers에 0~10중 숫자를 랜덤으로 넣어줌
+for num in range(0,10) :
+    numbers.append(random.randrange(0,10))
+
+print("생성된 리스트", numbers)
+
+for num in range(0,10) :
+    if num not in numbers :
+        print("숫자는 %d는(은) 리스트에 없네요." %num)
