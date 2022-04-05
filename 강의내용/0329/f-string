@@ -1,0 +1,14 @@
+a = 'a'
+b = 'is'
+print(f'a is {a}')
+print('a = {0} b ={1} a = {2}'.format(a,b,a))
+x, y, z = 1,2,3
+print(f'a is {x}, {y}, {z}')
+print('a = {0} b = {1} x = {2} y = {3} z = {4}'.format(a,b,x,y,z))
+print(f'a is {z}, {y}, {x}')
+print('a = {0} b = {1} z = {2} y = {3} x = {4}'.format(a,b,x,y,z))
+
+name = 'Steve'
+family = 'Jobs'
+print(f'My name is {name} {family}.I am {family} {name}')
+
