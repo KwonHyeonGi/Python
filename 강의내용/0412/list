@@ -1,0 +1,42 @@
+fruits = ['apple', 'banana', 'melon']
+for i in range(0,len(fruits)):
+    print(i, fruits[i])
+
+
+print("index값 뽑기")
+for fruit in fruits:
+    print(fruits.index(fruit), fruit)
+print()
+
+
+aa = [10,20,30,40]
+print("indexing")
+print("0:3= ", aa[0:3])
+print("2:4= ", aa[2:4])
+print()
+print("slicing")
+print("2:= ", aa[2:])
+print(":-3= ", aa[:-3])
+
+print()
+print(aa[:])
+print()
+
+bb = [10,20,30,40,50,60,70]
+print(bb[::2])
+print(bb[::-2])
+print(bb[::-1])
+print()
+
+print("값 변경하기")
+cc=[10,20,30]
+cc[1:2] = [200,201]
+print(cc)
+cc[1]=[200,201]
+print(cc)
+print()
+
+print("값 삭제하기")
+ee=[10,20,30,40]
+ee[1:4]=[]
+print(ee)
