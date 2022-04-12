@@ -1,0 +1,25 @@
+a ={'a':100, 'b':50, 'm':60}
+
+print(a)
+
+print("1번 : 나타내기")
+for k in a.keys():
+    print('key =', k)
+
+for v in a.values():
+    print('value = ', v)
+
+for k,v in a.items():
+    print('key =', k, 'value =', v)
+print()
+
+print("2번 : g,s 추가하기")
+a['g']='90'
+a['s']='40'
+print(a)
+print()
+
+print("3번 : b 삭제하기")
+del(a['b'])
+print(a)
+
